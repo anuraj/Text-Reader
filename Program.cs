@@ -16,6 +16,8 @@ Application.SetCompatibleTextRenderingDefault(false);
 
 using var form = new Form()
 {
+    Width = 800,
+    Height = 600,
     Text = "Text Reader",
 };
 
@@ -101,8 +103,8 @@ form.Controls.Add(new MenuStrip
             {
                 new ToolStripMenuItem("About", null, (s, e) =>
                 {
-                    MessageBox.Show(form, "Simple Text Reader\nUsing Windows Forms in .NET 10", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                })
+                    MessageBox.Show(form, "Simple Text Reader\nUsing Windows Forms in .NET 10\n\nSource code: https://github.com/anuraj/Text-Reader", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }, Keys.F1)
             }
         }
     }
